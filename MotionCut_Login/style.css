@@ -1,0 +1,322 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bespoke";
+    src: url("BespokeStencil-Bold.ttf");
+    }
+
+@font-face {
+    font-family: "Supreme";
+    src: url("Supreme-Regular.ttf");
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: rgb(6,33,62);
+    background: linear-gradient(347deg, rgba(6,33,62,1) 0%, rgba(115,51,78,1) 100%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 70vw;
+    height: 42rem;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: none;
+}
+
+.container .login{
+    width: 40vw;
+    background-color: #06213e;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.container .login .image{
+    width: 40vw;
+    background-color: #06213e;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.container .image img{
+    margin: 1rem;
+    width: 10rem;
+
+}
+
+.container .image h2{
+    margin: 4rem 0rem 0rem 0rem;
+    font-family: Bespoke;
+    color: aliceblue;
+    font-size: 32px;
+}
+
+
+.container .login .text p{
+    margin: 1rem;
+    font-family: Supreme;
+    color: aliceblue;
+    font-size: 20px;
+     text-align: center;
+}
+
+.container .login .messi{
+    width: 100%;
+    height: 30%;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+
+}
+
+.container .login .messi img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.container .login .icons {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    gap:20px;
+    grid-template-columns: auto auto auto;
+    justify-content: center; /* Align icons to the bottom of the container */
+    align-items: center;
+    
+}
+
+.container .login .icons #img1 {
+    width: 100%;
+    height: auto; /* Allow the height to adjust proportionally */
+    justify-content: center; /* Align icons to the bottom of the container */
+    align-self: end;
+}
+
+.container .login .icons #img2 {
+    width: 100%;
+    height: auto; /* Allow the height to adjust proportionally */
+    justify-content: center; /* Align icons to the bottom of the container */
+    align-self: end;
+}
+
+.container .login .icons #img3 {
+    width: 100%;
+    height: auto; /* Allow the height to adjust proportionally */
+    justify-content: center; /* Align icons to the bottom of the container */
+    align-self: end;
+}
+
+
+/* .container .form{
+    width: 30vw;
+    background-color: rgb(181, 40, 40);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form .box{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 28rem;
+    height: 30rem;
+    
+    padding: 20px; 
+    margin: 10px;
+    background-color: #f5f5f5;
+} */
+
+
+.container .form {
+    width: 30vw;
+    background-color: rgb(60, 69, 130);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column; /* Change to column to stack the pic and box vertically */
+    align-items: center;
+}
+
+
+.container .form .box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28vw;
+    height: 28vw;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    border-bottom: 2px #06213e;
+}
+
+
+
+
+
+
+.container .form .box form input{
+    width: 24vw;
+    height: 3vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0px 0px 0px;
+
+}
+
+.container .form .box form input:hover{
+    outline: none; /* Remove default focus outline */
+    border-color: #22272d; /* Change to desired color */
+    box-shadow: 0 0 5px rgba(33, 37, 40, 0.5); /* Add a subtle box shadow */
+
+}
+
+.container .form .box form input:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #22272d; /* Change to desired color */
+    box-shadow: 0 0 5px rgba(33, 37, 40, 0.5); 
+    
+}
+
+
+
+
+/* .container .form .box .checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.container .form .box .checkbox input {
+    width: 20px;
+} */
+
+
+.container .form .box form button {
+    width: 50%;
+    height: 10%;
+    background-color: #426387;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 25px;
+    transition: 0.7s ease-in-out;
+}
+
+.container .form .box form button:hover {
+    width: 70%;
+    background-color: #dca3a3; /* Darker color on hover */
+    color: #426387;
+    transform: translateY(20%);
+}
+
+
+
+
+
+/* FOR PIC */
+
+
+.container .form .pic {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: -60px; 
+    margin-top: 5%;
+}
+
+.container .form .pic img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.container {
+    display: flex;
+}
+
+.container .login {
+    flex: 1; 
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .container{
+        height: 72%;
+    
+    }
+    .container .login {
+        display: none;
+    }
+
+    .container .form {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    
+    
+     .container .form .box form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60vw;
+        height: 80vw;
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 30px;
+        border-radius: 10px;
+        border-bottom: 2px #06213e;
+    }
+    
+    
+    
+    .container .form .box form input{
+        width: 95%;
+        height: 14%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+        margin: 15px 0px 0px 0px;
+    
+    } 
+}
+
+
+
